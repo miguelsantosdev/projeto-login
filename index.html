@@ -19,11 +19,26 @@
                 </div>
                 <div id="img">
                     <div id="form">
-                        <form action="formulario.php" method="post">
+                        <form action="formulario.php" method="post" autocomplete="on">
+                            <div class="campo">
+                                <label for="usuario">Usuário:</label>
+                                <input type="email" name="conta" id="usuario" placeholder="Seu e-mail" required maxlength="30" autocomplete="email">
+                            </div>
+                            <div class="campo">
+                                <label for="senha">Senha:</label>
+                                <input type="password" name="acesso" id="senha" required minlength="6" maxlength="12" placeholder="Senha" autocomplete="current-password">
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
             </div>
+
+             <div id="acesso">
+                 <input class="btn" type="submit" value="Login">
+                 <button class="btn">Esqueci a Senha</button>
+             </div>
+            
             <p>
                 Seja bem vindo(a)!<br>Acesse com o seu Usuário.
             </p>

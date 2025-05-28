@@ -22,12 +22,14 @@ main {
 .boxx{
     display: flex;
     margin: auto;
-    width: 420px;
+    width: 480px;
     height: 320px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.664);
     margin-top: 200px;
+
+    transition: height 1s, width 1s;
 }
 
 #login {
@@ -44,6 +46,7 @@ h1 {
 }
 
 #img{
+    display: flex;
     flex: 1;
     background-image: url(imagens/pexels-matej-117839-774548.jpg);
     background-size: cover;
@@ -62,5 +65,22 @@ p {
     font-weight: bold;
     color: azure;
     text-shadow: 2px 2px 3px black;
+    padding-top: 20px;
 }
     
+#acesso {
+    display: block;
+    float: bottom;
+    padding-top: 10px;
+   
+}
+
+.btn{
+     padding: 5px;
+     transition: 1.3s;
+}
+
+#acesso > .btn:hover{
+    background-color:rgb(130, 152, 153);
+    color: white;
+}
