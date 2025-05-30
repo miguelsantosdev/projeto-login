@@ -61,6 +61,14 @@ h1 {
     font-size: 0.9em;
 }
 
+form > div.campo {
+    display: block;
+    font-variant: initial;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
 p {
     font-weight: bold;
     color: azure;
@@ -78,9 +86,23 @@ p {
 .btn{
      padding: 5px;
      transition: 1.3s;
+     cursor: pointer;
 }
 
 #acesso > .btn:hover{
     background-color:rgb(130, 152, 153);
     color: white;
 }
+
+div.campo > input {
+    margin-left: 5px;
+    border-radius: 5px;
+    width: 150px;
+    transition: width 1s;
+}
+
+div.campo > label {
+    margin-left: 10px;
+    transition: width 1s;
+}
+

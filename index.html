@@ -21,12 +21,12 @@
                     <div id="form">
                         <form action="formulario.php" method="post" autocomplete="on">
                             <div class="campo">
-                                <label for="usuario">Usuário:</label>
-                                <input type="email" name="conta" id="usuario" placeholder="Seu e-mail" required maxlength="30" autocomplete="email">
+                                <label for="usuario">Conta:</label>
+                                <input type="email" name="conta" id="usuario" placeholder="Seu e-mail" minlength="12" maxlength="30" autocomplete="email" required>
                             </div>
                             <div class="campo">
                                 <label for="senha">Senha:</label>
-                                <input type="password" name="acesso" id="senha" required minlength="6" maxlength="12" placeholder="Senha" autocomplete="current-password">
+                                <input type="password" name="acesso" id="senha" minlength="6" maxlength="12" placeholder="Senha" autocomplete="current-password" required>
                             </div>
                             
                         </form>
@@ -42,7 +42,11 @@
             <p>
                 Seja bem vindo(a)!<br>Acesse com o seu Usuário.
             </p>
+             
+             <p>&copy; Code-Miguel</p>
         </main>
+ 
     </section>
+    
 </body>
 </html>

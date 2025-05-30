@@ -26,7 +26,17 @@
     h1 {
         font-size: 2.0em;
     }
-    
+    div.campo > input {
+        margin-left: 5px;
+        border-radius: 5px;
+        width: 200px;
+        transition: width 1s
+    }
+    div.campo > label {
+        margin-left: 10px;
+        transition: width 1s    
+    }
+  
 }
 
 /* Versão para desktops maiores */
@@ -43,5 +53,15 @@
     }
     h1 {
         font-size: 2.6em;
+    }
+     div.campo > input {
+        margin-left: 5px;
+        border-radius: 5px;
+        width: 280px;
+        transition: width 1s
+    }
+    div.campo > label {
+        margin-left: 10px;
+        transition: width 1s    
     }
 }
